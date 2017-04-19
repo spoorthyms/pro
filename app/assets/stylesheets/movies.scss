@@ -1,0 +1,149 @@
+// Place all the styles related to the Movies controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+$white_opaque: rgba(250, 250, 250, .3);
+
+body{
+	height: auto;
+  background: -webkit-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+  background:    -moz-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+  background:     -ms-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+  background:      -o-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+  background:         linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+  font-family: 'Lato', sans-serif;
+
+}
+.nav navbar-nav {
+	
+	li {
+		display: inline;
+		margin-top: -10px;
+	}
+} 
+.jumbotron {
+	padding-top: 10px;
+	width: 90%;
+		height: auto;
+		max-width: 1200px;
+		background: $white_opaque;
+		margin: 3em auto 0em auto;
+		border-radius: 7px;
+		-webkit-box-shadow: 0 0 4px 3px rgba(0,0,0,.9);
+		box-shadow: 0 0 4px 4px rgba(0,0,0,.09);
+		padding: 2em 4em;
+}
+.row {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+	width: 90%;
+		
+		max-width: 1200px;
+		background: $white_opaque;
+		margin: 3em auto 0em auto;
+		border-radius: 7px;
+		-webkit-box-shadow: 0 0 4px 3px rgba(0,0,0,.9);
+		box-shadow: 0 0 4px 4px rgba(0,0,0,.09);
+		padding: 2em 4em;
+}
+	#page_wrapper {
+		width: 70%;
+		
+		padding-bottom: 20px;
+		max-width: 700px;
+		background: $white_opaque;
+		margin: 3em auto 0em auto;
+		border-radius: 7px;
+		-webkit-box-shadow: 0 0 4px 3px rgba(0,0,0,.9);
+		box-shadow: 0 0 4px 4px rgba(0,0,0,.09);
+		padding: 2em 4em;
+		#profile_image {
+			width: 300px;
+			float: left;
+			margin-right: 2em;
+			img {
+				width: 100%;
+				border-radius: 0.35em;
+			}
+		}
+		#content {
+			h1 {
+				font-weight: 500;
+			}
+			p {
+				font-size: 1.1em;
+				line-height: 1.75;
+
+			}
+			a {
+				color: #33acb7;
+				font-weight: 700;
+				text-decoration: none;
+			}
+		}
+
+		.links {
+			margin: 2em 0;
+		}
+		input[type="text"], input[type="email"], input[type="password"], textarea {
+			width: 95%;
+			border: 1px solid #d6dce0;
+			border-radius: .35em;
+			margin-top: 10px;
+			padding: .5em 1em;
+			line-height: 1.75;
+		}
+		input[type="text"] {
+			height: 30px;
+		}	
+		textarea {
+			min-height: 180px;
+		}
+		input[type="submit"] {
+			outline: none;
+			width: 29%;
+			margin: 10px 0;
+			background: transparent;
+			border: 1px solid #ffe;
+			padding: .5em 1.5em;
+			font-size: 1.1em;
+			border-radius: 1.5em;
+			
+			color: #ffe;
+			&:hover {
+				border: 1px solid #4CB8C4;
+				color: #4CB8C4;
+			}
+		}
+	}	
+
+		.panel-body {
+			padding-top: 20px;
+			height: 100%;
+  			background: -webkit-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+  			background:    -moz-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+  			background:     -ms-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+  			background:      -o-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+  			background:         linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+  			font-family: 'Lato', sans-serif;
+			.row {
+				padding-top: 30px;
+			}
+		}	
+	
+.review_title {
+	margin: 30px 0 20px 0;
+}
+.reviews {
+	padding: 15px 0;
+	border-bottom: 1px solid #EAEAEA;
+	.star-rating {
+		padding-bottom: 8px;
+	}
+}
+.navbar-form navbar{
+				display: inline;
+				
+		}

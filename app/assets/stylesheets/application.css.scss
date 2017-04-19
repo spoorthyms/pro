@@ -1,0 +1,383 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import 'movies';
+@import 'normalize';
+
+$white_opaque: rgba(250, 250, 250, .3);
+html {
+	font-family: 'Raleway', sans-serif;
+	height: 100%;
+	
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	
+	
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 500;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+	
+
+.button {
+	outline: none;
+	background: transparent;
+	border: 1px solid #d6dce0;
+	padding: .5em 1.5em;
+	border-radius: 1.5em;
+	
+	&:hover {
+		border: 1px solid #33acb7;
+		color: #33acb7;
+
+		a {
+			
+			color: #33acb7 !important;
+			text-decoration: none;
+		}
+	}
+}
+
+.clearfix:after {
+   content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+#main_content {
+	margin-left: 0px;
+	height: 100%;
+	padding-bottom: 3em;
+	
+	
+	#header {
+	
+		padding: 1em 3em;
+		border-bottom: 1px solid #d6dce0;
+		background: #f5f7f9;
+		color: #9eafba;
+
+		#logo {
+					width: 40px;
+					position: absolute;
+					margin-left: 3px;
+					margin-top: -10px;
+				}
+				
+		#navbar {
+			margin-left: 60px;
+			display: inline;
+			
+			a {
+				color: #9eafba;
+				text-decoration: none;
+				padding: 0px 10px 0px 10px;
+				&:hover {
+						color: #33acb7;
+					}
+			}
+			
+			}
+		
+		p {
+			display: inline;
+			position: relative;
+			margin-left: 55px;
+		}
+		.active {
+			a {
+				color: #33acb7;
+			}
+		}
+
+		
+		.buttons {
+			float: right;
+			margin-top: -1px;
+			-webkit-transition-duration: 0.4s; /* Safari */
+    		transition-duration: 0.4s;
+			.button {
+				font-size: 1.0em;
+				margin-left: .5em;
+
+				.button:hover {
+				background-color: #4CAF50; /* Green */
+    			color: white;
+				}
+			}
+		}
+		.sign_in {
+			outline: none;
+			float: right;
+			margin-top: -9px;
+			margin-left: 8px;
+			background: transparent;
+	    	border: 1px solid #d6dce0;
+			padding: .5em 1.5em;
+			border-radius: 1.5em;
+			display: block;
+			&:hover {
+				text-align: center;
+				border: 1px solid #33acb7;
+				display: block;
+				color: #33acb7;
+
+				a {
+					display: block;
+					color: #33acb7 !important;
+					text-decoration: none;
+				}
+			}
+		}
+		.sign_up {
+			outline: none;
+			float: right;
+			margin-top: -9px;
+			margin-right: 5px;
+			background: transparent;
+	    	border: 1px solid #d6dce0;
+			padding: .5em 1.5em;
+			border-radius: 1.5em;
+
+			&:hover {
+				text-align: center;
+				border: 1px solid #33acb7;
+				color: #33acb7;
+				
+				a {
+					display: block;
+					color: #33acb7 !important;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	.post_wrapper {
+		width: 80%;
+		max-width: 700px;
+		background: $white_opaque;
+		margin: 3em auto 0em auto;
+		border-radius: 7px;
+		-webkit-box-shadow: 0 0 4px 3px rgba(0,0,0,.9);
+		box-shadow: 0 0 4px 4px rgba(0,0,0,.09);
+		padding: 2em 4em;
+		border-bottom: 1px solid #d6dce0;
+		.title {
+			margin: 0;
+			a {
+				font-weight: 500;
+				text-decoration: none;
+				color: #2a2f35;
+				font-size: 1.5em;
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
+		.date_and_author {
+			color: #9eafba;
+			margin: .5em 0 0 0;
+		}
+	}
+	#post_content {
+		width: 80%;
+		padding-bottom: 10px;
+		max-width: 700px;
+		background: $white_opaque;
+		margin: 3em auto 0em auto;
+		border-radius: 7px;
+		-webkit-box-shadow: 0 0 4px 3px rgba(0,0,0,.9);
+		box-shadow: 0 0 4px 4px rgba(0,0,0,.09);
+		padding: 2em 4em;
+		.title {
+			font-weight: 500;
+			text-decoration: none;
+			color: #2a2f35;
+			font-size: 2.5em;
+			margin-bottom: 0;
+		}
+		.body {
+			font-size: 1.1em;
+			line-height: 1.75;
+		}
+		.date_and_author {
+			color: #9eafba;
+			margin: .5em 0 2em 0;
+		}
+		.links {
+		margin: 10em 0;
+		color: #33acb7;
+		}
+		#comments {
+			h2 {
+				margin: 3em 0 1em 0;
+				border-bottom: 1px solid #d6dce0;
+				padding-bottom: 0.5em;
+			}
+			h3 {
+				margin-top: 2em;
+			}
+			.comment {
+				border-bottom: 1px solid #d6dce0;
+				padding: 1.5em 2em;
+				.clear_both {
+					clear: both;
+				}
+				&:after {
+					clear: both;
+				}
+				.comment_content {
+					float: left;
+					.comment_name {
+						margin: 1em 0 0 0;
+						font-size: 0.7em;
+						text-transform: uppercase;
+					}
+					.comment_body {
+						font-size: 1.2em;
+						margin: 0.2em 0 0 0;
+					}
+					.comment_time {
+						margin-top: 1.2em;
+						font-size: .8em;
+					}
+				}
+				.button {
+					float: right;
+				}
+			}
+			input[type="text"], textarea {
+				width: 93%;
+			}
+		}
+	}
+	#page_wrapper {
+		
+		#profile_image {
+			width: 300px;
+			float: left;
+			margin-right: 2em;
+			img {
+				width: 100%;
+				border-radius: 0.35em;
+			}
+		}
+		#content {
+			h1 {
+				font-weight: 500;
+			}
+			p {
+				font-size: 1.1em;
+				line-height: 1.75;
+
+			}
+			a {
+				color: #33acb7;
+				font-weight: 700;
+				text-decoration: none;
+			}
+		}
+
+		.links {
+			margin: 2em 0;
+		}
+		input[type="text"], input[type="email"], input[type="password"], textarea {
+			width: 95%;
+			border: 1px solid #d6dce0;
+			border-radius: .35em;
+			margin-top: 10px;
+			padding: .5em 1em;
+			line-height: 1.75;
+		}
+		input[type="text"] {
+			height: 30px;
+		}	
+		textarea {
+			min-height: 180px;
+		}
+		input[type="submit"] {
+			outline: none;
+			width: 29%;
+			margin: 10px 0;
+			background: transparent;
+			border: 1px solid #ffe;
+			padding: .5em 1.5em;
+			font-size: 1.1em;
+			border-radius: 1.5em;
+			
+			color: #ffe;
+			&:hover {
+				border: 1px solid #4CB8C4;
+				color: #4CB8C4;
+			}
+		}
+		.signin {
+			outline: none;
+			width: 10%;
+			font-size: 17px;
+			background: transparent;
+			color: #33acb7;
+			&:hover {
+				color: #33acb7;
+				a {
+					text-decoration: none;
+					color: #fff;
+				}
+			}
+			
+		}	
+		.signup {
+			outline: none;
+			width: 15%;
+			font-size: 17px;
+			background: transparent;
+			color: #33acb7;
+			&:hover {
+				color: #33acb7;
+				a {
+					text-decoration: none;
+					color: #fff;
+				}
+			}
+			
+		}
+		.forget {
+			outline: none;
+			width: 35%;
+			font-size: 17px;
+			background: transparent;
+			color: #33acb7;
+			&:hover {
+				color: #33acb7;
+				a {
+					text-decoration: none;
+					color: #fff;
+				}
+			}
+			
+		}
+	}	
+}
